@@ -1,0 +1,168 @@
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	background: #c5c7cc;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+
+#app {
+	
+	margin: 30px auto;
+	padding: 2rem 1.25rem;
+	position: relative;
+	background-color: #a9cfe0;
+	margin-bottom: 3rem;
+	z-index: 999;
+	box-shadow: 2px 5px 6px 6px rgba(0, 0, 0, 0.3), 9px 11px 11px 0 rgba(0, 0, 0, 0.4);
+	color: black;
+	grid-gap: 1em;
+	font-size: 20px;
+	font-family: "Hind Siliguri", sans-serif;
+	line-height: 2.5em;
+}
+.container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: minmax(50px, auto);
+	grid-template-areas:
+		"hd"
+		"zip"
+		"feeling"
+		"generate"
+		"entry";
+	
+}
+
+.holder {
+	margin: 5px auto;
+}
+
+.entry {
+	width: 60%;
+	margin: 20px auto;
+	grid-area: entry;
+	padding: 9px 35px 92px 19px;
+	box-shadow: 2px 5px 6px 6px rgba(0, 0, 0, 0.3), 9px 11px 11px 0 rgba(0, 0, 0, 0.4);
+}
+
+#entryHolder {
+	
+	color: black;
+}
+
+#date {
+	color:#1c12a8;
+	font-weight: bold;
+}
+
+#temp {
+	color: #1c12a8;
+	font-weight: bolder;
+}
+
+#content {
+	color:#1c12a8;
+    font-weight: bolder;
+}
+
+.headline {
+	grid-area: hd;
+	padding-left: 30px;
+	
+}
+
+.zip {
+	grid-area: zip;
+}
+
+.feel {
+	grid-area: feeling;
+}
+
+.generate-button {
+	grid-area: generate;
+}
+
+#generate {
+	color: whitesmoke;
+	cursor: pointer;
+	justify-content: center;
+}
+
+.title {
+	font-family: sans-serif;
+	font-size: 23px;
+	color: #01050e;
+}
+
+label {
+	display: block;
+	font-size: 27px;
+	font-weight: 600;
+	color: #221e1d;
+	text-align: centryer;
+}
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+	padding-left: 5px;
+    background:#a0a5a7;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+button{
+    width: 400px;
+    height: 100px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+}
+
+h1{
+    font-size: 36px;
+} 
+
+textarea {
+	background:#a0a5a7;
+    color: #f0d43a;
+	padding: 5px;
+	font-size: 20px;
+	font-family: sans-serif;
+	
+}
+
+/* Reset style for HTML elementry on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
